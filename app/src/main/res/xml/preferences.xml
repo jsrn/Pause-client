@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="host"
+        android:title="Host"
+        android:summary="The IP of the listening machine."
+        android:defaultValue="" />
+</PreferenceScreen>
