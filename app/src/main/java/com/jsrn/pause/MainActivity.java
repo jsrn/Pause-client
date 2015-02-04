@@ -83,6 +83,13 @@ public class MainActivity extends Activity {
         String [] args = {host, "r"};
         new SocketSender().execute(args);
     }
+
+    public void turnOffScreen(View view) {
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        String host = sharedPref.getString("host", "");
+        String [] args = {host, "o"};
+        new SocketSender().execute(args);
+    }
 }
 
 class SocketSender extends AsyncTask<String, Void, Void> {
