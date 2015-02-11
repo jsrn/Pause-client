@@ -48,11 +48,21 @@ public class MainActivity extends Activity {
             return true;
         }
 
+        if (id == R.id.action_player_choice) {
+            openPlayerChoiceDialog();
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
     private void openSettingsScreen() {
         Intent myIntent = new Intent(getBaseContext(), SettingsActivity.class);
+        startActivityForResult(myIntent, 0);
+    }
+
+    public void openPlayerChoiceDialog() {
+        Intent myIntent = new Intent(getBaseContext(), PlayerSelection.class);
         startActivityForResult(myIntent, 0);
     }
 

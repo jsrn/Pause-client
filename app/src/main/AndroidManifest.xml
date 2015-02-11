@@ -23,6 +23,14 @@
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
+        <activity
+            android:name=".PlayerSelection"
+            android:label="@string/title_activity_player_selection" >
+        </activity>
+        <activity
+            android:name=".players.NetflixPlayerActivity"
+            android:label="@string/title_activity_netflix_player" >
+        </activity>
     </application>
 
 </manifest>
